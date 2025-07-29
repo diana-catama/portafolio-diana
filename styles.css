@@ -1,0 +1,43 @@
+:root {
+    --fondo: #F1EBDD;
+    --cuadro: #94B7BB;
+    --botones: #B9D5DA;
+    --otro: #C2CBD5;
+}
+
+
+body {
+    margin: 0;
+    background-color: var(--fondo);
+}
+
+.c-nombre {
+    background-color: var(--cuadro);
+    position: fixed;
+    border-radius: 0 0 6px 6px;
+    font-family: "Lobster", sans-serif;
+    color: white;
+    font-size: 30px;
+    padding: 10px 20px 5px;
+}
+
+.boton {
+    font-family: "Righteous", sans-serif;
+    background-color: var(--botones);
+    padding: 10px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: white;
+
+}
+
+.linea {
+    height: 3px;
+    background-color: var(--botones);
+}
+footer{
+    height: 200px;
+    background-color: var(--cuadro);
+    font-family: "Righteous", sans-serif;
+    color: white;
+}
