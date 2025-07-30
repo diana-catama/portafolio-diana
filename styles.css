@@ -11,14 +11,21 @@ body {
     background-color: var(--fondo);
 }
 
+.nav-bar {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .c-nombre {
     background-color: var(--cuadro);
-    position: fixed;
     border-radius: 0 0 6px 6px;
     font-family: "Lobster", sans-serif;
     color: white;
     font-size: 30px;
     padding: 10px 20px 5px;
+    margin-left: 25px;
 }
 
 .boton {
@@ -28,7 +35,7 @@ body {
     border-radius: 40px;
     text-decoration: none;
     color: white;
-
+    margin: 0 15px;
 }
 
 .linea {
