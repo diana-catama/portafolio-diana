@@ -1,7 +1,7 @@
 :root {
     --fondo: #F1EBDD;
     --cuadro: #94B7BB;
-    --botones: #B9D5DA;
+    --hover: #81c4d0;
     --otro: #C2CBD5;
 }
 
@@ -14,14 +14,18 @@ body {
 .nav-bar {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
     position: relative;
     padding: 0 20px;
+    height: 70px;
+    border-bottom: 4px solid var(--cuadro);
 }
 
 .c-nombre {
     background-color: var(--cuadro);
     border-radius: 0 0 6px 6px;
+    border: 2px solid white;
+    border-top: none;
     font-family: "Lobster", sans-serif;
     color: white;
     font-size: 30px;
@@ -29,13 +33,13 @@ body {
     margin-left: 25px;
     position: relative;
     z-index: 2;
-  
 }
 
 .navegacion {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: flex-start;
     flex-grow: 1;
     position: relative;
     margin-top: 10px;
@@ -49,20 +53,17 @@ body {
 
 .boton {
     font-family: "Righteous", sans-serif;
-    background-color: var(--botones);
+    background-color: var(--cuadro);
     padding: 10px 15px;
     border-radius: 40px;
     text-decoration: none;
     color: white;
+    border: 2px solid white;
 }
 
-.linea {
-    height: 3px;
-    background-color: var(--botones);
-    width: 100%;
-    top: 5px;
-    z-index: 1;
-    position: absolute;
+.boton:hover {
+    transform: scale(1.05);
+    background-color: var(--hover);
 }
 
 footer{
@@ -98,4 +99,7 @@ footer{
     cursor: pointer;
 }
 
+@media(max-width:768px){
+    
+}
 
