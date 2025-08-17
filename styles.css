@@ -108,6 +108,36 @@ body {
     border-bottom: 2px solid var(--cuadro);
 }
 
+.contenedor-proyectos {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.carrusel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.flecha {
+    background-color: transparent;
+    border:none;
+    transition: background 0.3s;
+}
+
+.proyectos-wrapper {
+    flex: 1;
+    overflow: hidden;
+}
+
+.proyectos-lista {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.5s ease;
+}
 .encabezado-conocimientos {
     font-weight: bold;
     padding: 30px 0;
