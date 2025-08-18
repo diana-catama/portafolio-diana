@@ -110,7 +110,7 @@ body {
 
 .contenedor-proyectos {
     max-width: 900px;
-    margin: auto;
+    margin: 40px auto;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -138,6 +138,48 @@ body {
     gap: 10px;
     transition: transform 0.5s ease;
 }
+
+.proyecto-btn {
+    min-width: 150px;
+    padding: 12px;
+    border: 2px solid var(--cuadro);
+    background: var(--otro);
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+.proyecto-btn:hover {
+    background-color: var(--hover);
+}
+
+.proyecto-btn.activo {
+    background-color: var(--cuadro);
+    font-weight: bold;
+}
+
+.descripcion-proyecto {
+    background-color: var(--otro);
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 4px 4px 6px var(--cuadro);
+}
+
+.descripcion img {
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+.descripcion p {
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+.oculto {
+    display: none;
+}
+
 .encabezado-conocimientos {
     font-weight: bold;
     padding: 30px 0;
